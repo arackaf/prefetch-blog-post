@@ -13,7 +13,7 @@
 	});
 </script>
 
-<div>
+<div class="flex flex-col gap-2">
 	{#each books as book}
 		<span>{book.title}</span>
 	{/each}
