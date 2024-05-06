@@ -23,6 +23,13 @@
 	});
 </script>
 
+<svelte:head>
+	<link rel="prefetch" href="/api/books" as="fetch" />
+	<link rel="prefetch" href="/api/books-count" as="fetch" />
+</svelte:head>
+
+<a href="/foo">Foo</a>
+
 {#if books && count != null}
 	<div class="m-8">
 		<h1 class="mb-3 text-lg">You have {count} book{count === 1 ? '' : 's'}</h1>

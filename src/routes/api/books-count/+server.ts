@@ -12,6 +12,6 @@ export async function GET({ url, setHeaders, locals }) {
   `
 	);
 
-	await new Promise(res => setTimeout(res, Math.random() * 300));
+	await new Promise(res => setTimeout(res, 300));
 	return json(booksPacket[0]);
 }
